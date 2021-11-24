@@ -1,0 +1,16 @@
+{
+  "name": "webpack-export-shim",
+  "packageManager": "yarn@3.1.0",
+  "scripts": {
+    "start:browser": "serve browser",
+    "start:node": "node node/index.mjs",
+    "start:webpack": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "serve": "^13.0.2",
+    "webpack": "^5.64.3",
+    "webpack-cli": "^4.9.1"
+  }
+}
