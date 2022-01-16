@@ -1,9 +1,11 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
+const maybeReactUseId = React["useId" + ""];
+
 function useId() {
-  if (React.useId !== undefined) {
-    return React.useId();
+  if (maybeReactUseId !== undefined) {
+    return maybeReactUseId();
   }
   return "shimmed";
 }

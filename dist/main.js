@@ -16,7 +16,7 @@
   \******************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\n\n\nfunction useId() {\n  if (react__WEBPACK_IMPORTED_MODULE_0__.useId !== undefined) {\n    return react__WEBPACK_IMPORTED_MODULE_0__.useId();\n  }\n  return \"shimmed\";\n}\n\nfunction App() {\n  const id = useId();\n\n  return id;\n}\n\nconst container = document.createElement(\"div\");\ndocument.body.appendChild(container);\n\nreact_dom__WEBPACK_IMPORTED_MODULE_1__.render(react__WEBPACK_IMPORTED_MODULE_0__.createElement(App), container);\n\n\n//# sourceURL=webpack://webpack-export-shim/./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\nconst React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\n\nconst maybeReactUseId = React.useId;\n\nfunction useId() {\n  if (maybeReactUseId !== undefined) {\n    return maybeReactUseId();\n  }\n  return \"shimmed\";\n}\n\nfunction App() {\n  const id = useId();\n\n  return id;\n}\n\nconst container = document.createElement(\"div\");\ndocument.body.appendChild(container);\n\nreact_dom__WEBPACK_IMPORTED_MODULE_0__.render(React.createElement(App), container);\n\n\n//# sourceURL=webpack://webpack-export-shim/./index.js?");
 
 /***/ }),
 
