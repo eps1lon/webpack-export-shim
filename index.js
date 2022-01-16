@@ -1,4 +1,4 @@
-import * as React from "react";
+const React = require("react");
 import * as ReactDOM from "react-dom";
 
 function useId() {
